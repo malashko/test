@@ -9,22 +9,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * Created by Jake on 13.03.2015.
- */
-public class TestClassGit {
 
+public class TestClassGit {
+    public static WebDriver driver = new FirefoxDriver();
    @Test
     public void Setup(){
-        Assert.assertTrue(initGit.init());
+        Assert.assertTrue(initGit.init(driver));
     }
-    @Test
+    @BeforeMethod
     public void login(){
-        Assert.assertTrue(loginGit.login());
+        Assert.assertTrue(loginGit.login(driver));
     }
-    @Test
+    @AfterMethod
     public void createRepos(){
-        Assert.assertTrue(createReposGit.createRepos());
+        Assert.assertTrue(createReposGit.createRepos(driver));
     }
 
 }
