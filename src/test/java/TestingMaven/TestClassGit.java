@@ -21,10 +21,5 @@ public class TestClassGit {
     @Test
     public void login(){
         Assert.assertTrue(loginGit.login());
-    }
-   /* @Test
-    public void createRepos(){
-        Assert.assertTrue(createReposGit.createRepos());
-    }*/
-
+ }
 }
