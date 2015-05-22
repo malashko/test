@@ -22,9 +22,9 @@ public class TestClassGit {
     public void login(){
         Assert.assertTrue(loginGit.login());
     }
-    @Test
+   /* @Test
     public void createRepos(){
         Assert.assertTrue(createReposGit.createRepos());
-    }
+    }*/
 
 }
